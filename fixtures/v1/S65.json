@@ -1,0 +1,23 @@
+{
+  "id": "S65",
+  "raw_input": {
+    "patientId": "DEMO-065",
+    "patientName": "Demo Patient 065",
+    "program": "Weekly check-in",
+    "weekStatus": "99999_SYSTEM_OVERFLOW_VALUE",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "ambiguous",
+    "schema_fallback",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Numeric corrupted status code defaults to human review fail-safe."
+}

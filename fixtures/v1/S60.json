@@ -1,0 +1,23 @@
+{
+  "id": "S60",
+  "raw_input": {
+    "patientId": "",
+    "patientName": "Demo Patient 060",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "INPUT_ERROR",
+  "tags": [
+    "validation",
+    "missing_patient_id",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Missing patient ID is an invalid input error."
+}

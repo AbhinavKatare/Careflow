@@ -1,0 +1,24 @@
+{
+  "id": "S20",
+  "raw_input": {
+    "patientId": "DEMO-020",
+    "patientName": "Demo Patient 020",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "feelin 100% fine thx for checking in",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "informal",
+    "slang",
+    "untrusted_text",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Slang text in free-text note routes to human review under the untrusted free text policy."
+}

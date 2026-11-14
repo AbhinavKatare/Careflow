@@ -1,0 +1,23 @@
+{
+  "id": "S26",
+  "raw_input": {
+    "patientId": "DEMO-026",
+    "patientName": "Demo Patient 026",
+    "program": "Weekly check-in",
+    "weekStatus": "on track with my weekly routne",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "typo_tolerated",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Tolerated minor typo in structured status with empty note routes to draft proposal."
+}

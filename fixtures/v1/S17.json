@@ -1,0 +1,23 @@
+{
+  "id": "S17",
+  "raw_input": {
+    "patientId": "DEMO-017",
+    "patientName": "Demo Patient 017",
+    "program": "Weekly check-in",
+    "weekStatus": "I'm not sure how to answer",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "uncertainty",
+    "human_review",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Structured selection of uncertainty indicates ambiguity requiring staff engagement."
+}

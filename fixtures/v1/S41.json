@@ -1,0 +1,24 @@
+{
+  "id": "S41",
+  "raw_input": {
+    "patientId": "DEMO-041",
+    "patientName": "Demo Patient 041",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "Experiencing chest​pain right now",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "unicode_trick",
+    "zero_width",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Zero-width space between words normalized and matched against red-flag list."
+}

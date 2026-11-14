@@ -1,0 +1,23 @@
+{
+  "id": "S01",
+  "raw_input": {
+    "patientId": "DEMO-001",
+    "patientName": "Demo Patient 001",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "baseline",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Routine structured on-track check-in with no follow-up request and empty free-text note."
+}

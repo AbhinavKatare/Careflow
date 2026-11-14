@@ -1,0 +1,24 @@
+{
+  "id": "S25",
+  "raw_input": {
+    "patientId": "DEMO-025",
+    "patientName": "Demo Patient 025",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "plz cll me back asap regarding my appointment schedule",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "followup",
+    "typo",
+    "untrusted_text",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Participant note with phonetic typos requesting callback routes to human review."
+}

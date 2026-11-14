@@ -1,0 +1,24 @@
+{
+  "id": "S06",
+  "raw_input": {
+    "patientId": "DEMO-006",
+    "patientName": "Demo Patient 006",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "I am having extreme difficulty, cannot take any medications, and am completely failing routine.",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "safety",
+    "contradiction",
+    "critical",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Direct contradiction between structured on-track status and unstructured statement of failure."
+}

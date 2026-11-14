@@ -1,0 +1,24 @@
+{
+  "id": "S40",
+  "raw_input": {
+    "patientId": "DEMO-040",
+    "patientName": "Demo Patient 040",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "I have severe c​h​e​s​t p​a​i​n since morning",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "unicode_trick",
+    "zero_width",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Zero-width spaces embedded inside urgent symptom phrase stripped and detected."
+}

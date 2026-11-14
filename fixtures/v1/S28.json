@@ -1,0 +1,24 @@
+{
+  "id": "S28",
+  "raw_input": {
+    "patientId": "DEMO-028",
+    "patientName": "Demo Patient 028",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "yes",
+    "note": "need to speak with team",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "followup",
+    "explicit",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Explicit follow-up request accompanied by free text routes to human review."
+}

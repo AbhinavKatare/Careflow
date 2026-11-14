@@ -1,0 +1,24 @@
+{
+  "id": "S27",
+  "raw_input": {
+    "patientId": "DEMO-027",
+    "patientName": "Demo Patient 027",
+    "program": "Weekly check-in",
+    "weekStatus": "I have a question for the care team",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "followup",
+    "question",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Question status triggers human review even when followUp radio is set to no."
+}

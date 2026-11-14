@@ -1,0 +1,24 @@
+{
+  "id": "S51",
+  "raw_input": {
+    "patientId": "DEMO-051",
+    "patientName": "Demo Patient 051",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "<script>alert('xss_attack')</script>",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "code_injection",
+    "xss",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "HTML / script tag injection pattern flagged and safely routed to staff review."
+}

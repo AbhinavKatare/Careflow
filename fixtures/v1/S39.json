@@ -1,0 +1,23 @@
+{
+  "id": "S39",
+  "raw_input": {
+    "patientId": "DEMO-039",
+    "patientName": "Demo Patient 039",
+    "program": "Weekly check-in",
+    "weekStatus": "\tOn track with my weekly routine\n",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "whitespace_normalization",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Leading tab and trailing newline stripped during normalization."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "S61",
+  "raw_input": {
+    "patientId": "DEMO-061",
+    "patientName": "Demo Patient 061",
+    "program": "Weekly check-in",
+    "weekStatus": "",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "INPUT_ERROR",
+  "tags": [
+    "validation",
+    "missing_week_status",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Missing required weekly status field is an input validation error."
+}

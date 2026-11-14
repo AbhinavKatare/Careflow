@@ -1,0 +1,23 @@
+{
+  "id": "S62",
+  "raw_input": {
+    "patientId": "",
+    "patientName": "",
+    "program": "Weekly check-in",
+    "weekStatus": "",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "INPUT_ERROR",
+  "tags": [
+    "validation",
+    "empty_required_fields",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "All required identity and status fields missing."
+}

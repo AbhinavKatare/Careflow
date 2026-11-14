@@ -1,0 +1,24 @@
+{
+  "id": "S02",
+  "raw_input": {
+    "patientId": "DEMO-002",
+    "patientName": "Demo Patient 002",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "waterIntake": "adequate",
+      "sleepHours": 8
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "complete",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Complete check-in with valid structured answers and empty note routes directly to draft proposal."
+}

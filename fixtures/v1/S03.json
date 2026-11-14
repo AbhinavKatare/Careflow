@@ -1,0 +1,23 @@
+{
+  "id": "S03",
+  "raw_input": {
+    "patientId": "DEMO-003",
+    "patientName": "Demo Patient 003",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routne",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "typo_tolerated",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Harmless minor typo in routine status selection does not alter classification or route."
+}

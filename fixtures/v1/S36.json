@@ -1,0 +1,24 @@
+{
+  "id": "S36",
+  "raw_input": {
+    "patientId": "DEMO-036",
+    "patientName": "Demo Patient 036",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "help help help help help help help help",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "repeated_phrase",
+    "distress",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Repeated distress words in free text must be evaluated by clinic staff."
+}

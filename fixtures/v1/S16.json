@@ -1,0 +1,23 @@
+{
+  "id": "S16",
+  "raw_input": {
+    "patientId": "DEMO-016",
+    "patientName": "Demo Patient 016",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "Please have someone from the clinic review my recent lab work.",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "untrusted_text",
+    "staff_request",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Untrusted participant free text requesting clinic review requires human staff evaluation."
+}

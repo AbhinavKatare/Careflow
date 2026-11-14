@@ -1,0 +1,24 @@
+{
+  "id": "S55",
+  "raw_input": {
+    "patientId": "DEMO-055",
+    "patientName": "Demo Patient 055",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "I am having extreme difficulty, cannot take any medications, and am completely failing.",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "contradiction",
+    "medication_stopping",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Contradiction between on-track status and medication distress in free text."
+}

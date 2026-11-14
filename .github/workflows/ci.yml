@@ -1,0 +1,97 @@
+name: Careflow CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  verify:
+    name: Lint, Check, Tests, Eval, Mutation & E2E
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install Node dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Install Python test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-asyncio anyio respx alembic sqlalchemy
+
+      - name: 1. Secrets & Credentials Scan
+        run: pnpm security:scan
+
+      - name: 2. TypeScript Static Type Check
+        run: pnpm check
+
+      - name: 3. ESLint Code Quality
+        run: pnpm lint
+
+      - name: 4. Vitest Unit, Chaos, Security & Voice Tests
+        run: pnpm test
+
+      - name: 5. Evaluation Suite
+        run: pnpm eval
+
+      - name: 6. Mutation Testing Harness
+        run: pnpm mutate
+
+      - name: 7. CI Safety Gate & Route Regression Check
+        run: node ./node_modules/tsx/dist/cli.mjs scripts/ci-gate-check.ts
+        env:
+          GITHUB_STEP_SUMMARY: ${{ github.step_summary }}
+
+      - name: 8. Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: 9. Playwright E2E Tests
+        run: pnpm test:e2e
+
+      - name: 10. Post PR Comment with Quality & Safety Metrics
+        if: github.event_name == 'pull_request' && failure() == false
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            // Check if step summary or report exists
+            const summaryPath = process.env.GITHUB_STEP_SUMMARY;
+            let reportContent = "### Careflow Quality & Safety CI Gate Report\n\nAll automated safety gates and regression checks passed successfully.";
+            if (summaryPath && fs.existsSync(summaryPath)) {
+              const fileContent = fs.readFileSync(summaryPath, 'utf8');
+              if (fileContent.trim().length > 0) {
+                reportContent = fileContent;
+              }
+            }
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: reportContent
+            });
+

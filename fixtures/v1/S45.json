@@ -1,0 +1,24 @@
+{
+  "id": "S45",
+  "raw_input": {
+    "patientId": "DEMO-045",
+    "patientName": "Demo Patient 045",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "This is an emer­gency condition",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "unicode_trick",
+    "soft_hyphen",
+    "critical",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Soft-hyphen evasion character stripped to reveal emergency keyword."
+}

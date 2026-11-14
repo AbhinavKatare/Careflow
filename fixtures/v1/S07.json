@@ -1,0 +1,23 @@
+{
+  "id": "S07",
+  "raw_input": {
+    "patientId": "",
+    "patientName": "",
+    "program": "Weekly check-in",
+    "weekStatus": "",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "INPUT_ERROR",
+  "tags": [
+    "validation",
+    "missing_required",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Empty required fields (patientId and weekStatus) violate schema and cannot be routed."
+}

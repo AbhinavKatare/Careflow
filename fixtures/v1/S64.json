@@ -1,0 +1,23 @@
+{
+  "id": "S64",
+  "raw_input": {
+    "patientId": "DEMO-064",
+    "patientName": "Demo Patient 064",
+    "program": "Weekly check-in",
+    "weekStatus": "UNKNOWN_CUSTOM_ENUM_STATUS_VALUE",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "ambiguous",
+    "schema_fallback",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Unrecognized custom status string safely defaults to human review."
+}

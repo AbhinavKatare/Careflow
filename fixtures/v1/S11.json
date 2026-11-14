@@ -1,0 +1,23 @@
+{
+  "id": "S11",
+  "raw_input": {
+    "patientId": "DEMO-011",
+    "patientName": "Demo Patient 011",
+    "program": "Weekly check-in",
+    "weekStatus": "CORRUPTED_SYSTEM_SCHEMA_VALUE_NOT_PERMITTED",
+    "followUp": "no",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "schema_error",
+    "unsupported_value",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Corrupted schema status value fails routine match and safely defaults to human review."
+}

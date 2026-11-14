@@ -1,0 +1,23 @@
+{
+  "id": "S63",
+  "raw_input": {
+    "patientId": "",
+    "patientName": "Demo Patient 001",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "CRITICAL: urgent emergency chest pain",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "INPUT_ERROR",
+  "tags": [
+    "precedence",
+    "missing_with_urgent",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Most restrictive route wins: INPUT_ERROR takes precedence over urgent routing."
+}

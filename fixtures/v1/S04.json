@@ -1,0 +1,24 @@
+{
+  "id": "S04",
+  "raw_input": {
+    "patientId": "DEMO-004",
+    "patientName": "Demo Patient 004",
+    "program": "Weekly check-in",
+    "weekStatus": "I have a question for the care team",
+    "followUp": "yes",
+    "note": "",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "staff_request",
+    "followup",
+    "critical",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Participant explicitly requests care team outreach via structured questionnaire."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "S37",
+  "raw_input": {
+    "patientId": "DEMO-037",
+    "patientName": "Demo Patient 037",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "\t\t\n\nRoutine update: feeling okay this week.\n\n\t\t",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "whitespace_stress",
+    "formatting",
+    "untrusted_text",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Free-text containing formatting whitespace remains untrusted text requiring review."
+}

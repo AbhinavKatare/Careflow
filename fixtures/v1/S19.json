@@ -1,0 +1,23 @@
+{
+  "id": "S19",
+  "raw_input": {
+    "patientId": "DEMO-019",
+    "patientName": "Demo Patient 019",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "all good, chillin, no issues at all this week",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "informal",
+    "untrusted_text",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Informal free text is untrusted content and must be reviewed by staff prior to communication."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "S12",
+  "raw_input": {
+    "patientId": "DEMO-012",
+    "patientName": "Demo Patient 012",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "[SIMULATED_PROVIDER_TIMEOUT]",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "resilience",
+    "provider_timeout",
+    "critical",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Payload marked with simulated upstream failure marker must be surfaced visibly to human staff."
+}

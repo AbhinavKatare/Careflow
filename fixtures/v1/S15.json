@@ -1,0 +1,23 @@
+{
+  "id": "S15",
+  "raw_input": {
+    "patientId": "DEMO-015",
+    "patientName": "Demo Patient 015",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "    ",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "DRAFT_FOR_REVIEW",
+  "tags": [
+    "routine",
+    "whitespace_note",
+    "hand_written"
+  ],
+  "provenance": "hand_written",
+  "rationale": "Whitespace-only note is stripped and treated as empty, allowing routine draft proposal."
+}

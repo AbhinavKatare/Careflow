@@ -1,0 +1,24 @@
+{
+  "id": "S22",
+  "raw_input": {
+    "patientId": "DEMO-022",
+    "patientName": "Demo Patient 022",
+    "program": "Weekly check-in",
+    "weekStatus": "On track with my weekly routine",
+    "followUp": "no",
+    "note": "just sayin hi, routine is going super well",
+    "structuredAnswers": {
+      "routineAdherence": "on_track",
+      "followUpRequested": false
+    }
+  },
+  "expected_route": "HUMAN_REVIEW_REQUIRED",
+  "tags": [
+    "informal",
+    "colloquial",
+    "untrusted_text",
+    "generated"
+  ],
+  "provenance": "generated",
+  "rationale": "Colloquial greetings in free text are kept untrusted and routed to staff."
+}
